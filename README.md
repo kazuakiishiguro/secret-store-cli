@@ -4,7 +4,7 @@ This is SecretStore CLI tool
 
 ## architecture
 
-If you are not familliar with how SecretStore works, you can read more details from [Parity's documentation](https://wiki.parity.io/Secret-Store)
+If you are not familliar with how SecretStore works, you can read more details at [Open Ethereum's documentation](https://openethereum.github.io/Secret-Store)
 
 ## dependency
 
