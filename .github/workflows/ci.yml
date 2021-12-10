@@ -5,6 +5,18 @@ on:
     branches: [ master ]
 
 jobs:
+  linux_stable:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions-rs/toolchain@v1
+      with:
+        profile: minimal
+    - name: Build
+      run: ./scripts/build-darwin-universal.sh
+    - name: Run tests
+      run: cargo test --verbose
+      
   macos_stable:
     runs-on: macos-latest
     steps:
@@ -12,9 +24,7 @@ jobs:
     - uses: actions-rs/toolchain@v1
       with:
         profile: minimal
-        toolchain: nightly
-        override: true
     - name: Build
-      run: ./build-darwin-universal.sh
+      run: ./scripts/build-darwin-universal.sh
     - name: Run tests
-      run: cargo test
+      run: cargo test --verbose

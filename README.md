@@ -10,16 +10,17 @@ If you are not familliar with how SecretStore works, you can read more details a
 
 Here are the local tested versions :
 
+* Ubuntu : Ubuntu 20.04.3 LTS
 * OS : macos Monterey 12.0.1
-* cargo 1.36.0 (c4fcfb725 2019-05-15)
-* rustc 1.36.0 (a53f9df32 2019-07-03)
+* cargo 1.56.0 (4ed5d137b 2021-10-04)
 
-## install
+## build
+
+### for linux
 
 ```bash
-$ ./build-darwin-universal.sh
-$ ./target/release/secret_store_cli.bundle
-
+$ cargo build --resease
+$ ./target/resease/secret-store-cli
 secret-store-cli
 
 FLAGS:
@@ -31,4 +32,11 @@ SUBCOMMANDS:
     decrypt    Decrypt document
     encrypt    Encrypt document and receive document key ID and IPFS hash
     help       Prints this message or the help of the given subcommand(s)
+```
+
+### for OSX
+
+```bash
+$ ./build-darwin-universal.sh
+$ ./target/release/secret-store-cli.bundle
 ```
