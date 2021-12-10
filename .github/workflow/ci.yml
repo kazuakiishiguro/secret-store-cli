@@ -1,0 +1,15 @@
+name: ci
+
+on: 
+  push:
+    branches: [ master ]
+
+jobs:
+  macos_stable:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: ./build-darwin-unisersal.sh
+    - name: Run tests
+      run: cargo test
