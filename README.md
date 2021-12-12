@@ -37,6 +37,6 @@ SUBCOMMANDS:
 ### for OSX
 
 ```bash
-$ ./build-darwin-universal.sh
+$ ./scripts/build-darwin-universal.sh
 $ ./target/release/secret-store-cli.bundle
 ```
