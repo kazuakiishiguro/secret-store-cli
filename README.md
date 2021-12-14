@@ -42,3 +42,7 @@ SUBCOMMANDS:
 $ ./scripts/build-darwin-universal.sh
 $ ./target/release/secret-store-cli.bundle
 ```
+
+## example
+
+see [example](EXAMPLE.md) file how this cli works with secret store.
