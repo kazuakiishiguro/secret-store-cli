@@ -4,6 +4,8 @@ This is SecretStore CLI tool
 
 ## architecture
 
+![picture](picture.png)
+
 If you are not familliar with how SecretStore works, you can read more details at [Open Ethereum's documentation](https://openethereum.github.io/Secret-Store)
 
 ## dependency
