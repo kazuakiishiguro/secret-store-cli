@@ -34,7 +34,7 @@ Here are the local tested versions :
 ### for linux
 
 ```bash
-$ cargo build --resease
+$ cargo build --release
 $ ./target/resease/secret-store-cli
 secret-store-cli
 
